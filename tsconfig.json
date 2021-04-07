@@ -20,7 +20,8 @@
     "**/*.ts",
     "**/*.tsx",
     "src/helpers/test/fileTransform.js",
-    "src/helpers/test/cssTransform.js"
+    "src/helpers/test/cssTransform.js",
+    "src/pages/_app.js"
   ],
   "exclude": ["node_modules"]
 }

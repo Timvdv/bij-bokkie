@@ -1,3 +1,6 @@
 module.exports = {
-  /* config options here */
+  images: {
+    loader: "cloudinary",
+    path: "https://res.cloudinary.com/bij-bokkie/",
+  },
 };
