@@ -1,0 +1,37 @@
+@import "static/scss/common/variables.scss";
+
+.header {
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: $col-l;
+  margin: auto;
+
+  * {
+    width: 33.33333333333%;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  text-align: right;
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+
+  li {
+    margin: 1em;
+
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
