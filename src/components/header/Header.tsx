@@ -4,11 +4,16 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <Link href="/">Bij Bokkie</Link>
+      <span className={styles.textLink}>
+        <Link href="/">Bij Bokkie</Link>
+      </span>
 
       <div className={styles.logo}>
         <Link href="/">
-          <img src="/bij-bokkie/logo.png" alt="Bij Bokkie logo" />
+          <img
+            src="http://timvandevathorst.nl/bij-bokkie/logo.png"
+            alt="Bij Bokkie logo"
+          />
         </Link>
       </div>
 
@@ -16,7 +21,7 @@ const Header = () => {
         <li>
           <Link href="/bij-bokkie/over-ons.html">Over ons</Link>
         </li>
-        <li>
+        <li className={styles.bookButton}>
           <Link href="/bij-bokkie/boeken.html">Boek nu</Link>
         </li>
       </ul>

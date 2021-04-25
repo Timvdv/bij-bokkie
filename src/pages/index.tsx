@@ -174,8 +174,15 @@ export default function Home() {
             stadje is zeker de moeite waard. Bovendien vindt u er ook veel
             gezellige terrassen en eetgelegenheden. Ook het dichtstbijzijnde
             Buren met de authentieke stadswal en het voormalige Burgerweeshuis
-            en de unieke Oranje geschiedenis is uitstapje waard.
+            en de unieke Oranje geschiedenis is een uitstapje waard.
           </p>
+
+          <p>
+            Wilt u meer weten over het dorp Rijswijk zelf, kan ik u meenemen
+            naar de Martinuskerk en/of Korenmolen De Hoop zodra de Coronaregels
+            dat weer toelaten.
+          </p>
+
           <p>
             Wilt u meer weten over het dorp Rijswijk zelf, dan biedt ik u (mits
             de Coronaregels dat weer toelaten) een bezoekje aan naar Korenmolen
@@ -278,7 +285,7 @@ export default function Home() {
               <li>Schoonmaakkosten</li>
               <li>Inclusief ontbijt</li>
               <li>Een opgemaakt bed</li>
-              <li>bosje bloemen uit de tuin, mist voorradig</li>
+              <li>bosje bloemen uit de tuin, mits voorradig</li>
             </ul>
           </div>
 
@@ -290,7 +297,7 @@ export default function Home() {
               <li>Schoonmaakkosten</li>
               <li>Inclusief ontbijt</li>
               <li>Een opgemaakt bed</li>
-              <li>bosje bloemen uit de tuin, mist voorradig</li>
+              <li>bosje bloemen uit de tuin, mits voorradig</li>
             </ul>
           </div>
         </div>
@@ -300,7 +307,7 @@ export default function Home() {
         <div className={styles.textCol2}>
           <div className={styles.col}>
             <h2>Ruimte</h2>
-            <p>B&amp;B kamer van 18 Vierkante meter inclusief:</p>
+            <p>B&amp;B kamer van 17m² inclusief:</p>
 
             <ul>
               <li>Slaapgedeelte</li>
@@ -349,7 +356,7 @@ export default function Home() {
               <li>Parkeerplaats op eigen terrein</li>
               <li>Gebruik van palletbank zithoek</li>
               <li>Tafeltennistafel</li>
-              <li>Miniklimmuur in overleg </li>
+              <li>Mini klimmuur in overleg</li>
             </ul>
           </div>
         </div>
@@ -377,7 +384,7 @@ export default function Home() {
           <p>
             Per auto A2 Afrit Culemborg {">"} richting Kesteren Afslag Rijswijk{" "}
             {">"} De Heuvel Rechtsaf Rijswijk {">"} Pr. Irenestraat Tweede
-            straat links {">"} Korte Bosstraat Eerste straat links {">"} Baron
+            straat links {">"} Korte Bosstraat Eerste straat rechts {">"} Baron
             van Brakellstraat Einde rechts{">"} Kerkstraat Laatste huis aan de
             rechterkant: Bij Bokkie
           </p>
@@ -385,10 +392,11 @@ export default function Home() {
         <div className={styles.text}>
           <h2>Per trein</h2>
           <p>
-            Station Culemborg (pick-up 10 euro) Per bus: Vanaf station Culemborg
-            lijn: Arriva Bus 46 {">"} richting Tiel Bushalte Kerk, Zoelmond
-            Arriva Buurtbus {">"} richting Maurik Bushalte Hoekenburgplein,
-            Rijswijk Gelderland 5 minuten lopen naar Bij Bokkie op Kerkstraat 1
+            Station Culemborg (pick-up 12,50 euro) Per bus: Vanaf station
+            Culemborg lijn: Arriva Bus 46 {">"} richting Tiel Bushalte Kerk,
+            Zoelmond Arriva Buurtbus {">"} richting Maurik Bushalte
+            Hoekenburgplein, Rijswijk Gelderland 5 minuten lopen naar Bij Bokkie
+            op Kerkstraat 1
           </p>
 
           <p>

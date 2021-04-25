@@ -40,17 +40,12 @@
   width: 100vw;
   overflow: scroll;
 
-  scroll-snap-type: x mandatory;
-  scroll-padding: 50%;
-  scroll-snap-points-x: repeat(100%);
-
   > div {
     position: absolute;
     top: 2em;
     left: 0;
     display: flex;
     flex-flow: nowrap;
-    scroll-snap-align: center;
   }
 }
 
@@ -138,6 +133,10 @@
   @media (min-width: $col-s) {
     flex-direction: row;
   }
+}
+
+.textColCentered {
+  align-items: center;
 }
 
 .colHeader {

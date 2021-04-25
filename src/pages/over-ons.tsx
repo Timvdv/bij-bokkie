@@ -16,24 +16,23 @@ export default function OverOns() {
 
       <main className={styles.main}>
         <div className={styles.text}>
-          <h2>Locatie</h2>
+          <h2>Over ons</h2>
           <p>
-            In het voorjaar geurt de omgeving van de weelderig bloeiende
-            bloesem, begin zomer kunt u overal in de omgeving heerlijke
-            aardbeien en kersen kopen en later in het jaar pruimen, appels en
-            peren. Op warme dagen kunt u op loopafstand heerlijk luieren aan de
-            rivier.
+            Wij zijn Matthijs en Jolanda. Sinds 1992 wonen we hier op Kerkstraat
+            1 in Rijswijk (Gld). Dit pand uit 1944 werd na de oorlog het lokale
+            dorpscafé. Het werd gesloten in de jaren 70 en daarna gebruikt als
+            woonhuis. Eigenaar van het café was Antonie Petrus Baauw in het dorp
+            beter bekend als Bokkie. Zijn bijnaam kreeg hij omdat hij zonder
+            remmen met zijn auto tegen van de dijk reed en tegen een boom
+            botste. Twee grote bulten op zijn hoofd zorgden voor zijn bijnaam
+            Bokkie Baauw. Vandaar dat we onze B&B ‘Bij Bokkie’ hebben genoemd.
           </p>
-        </div>
 
-        <div className={styles.text}>
-          <h2>Bereikbaarheid</h2>
           <p>
-            Gesitueerd het midden van het land op een rustige plek met een ruime
-            parkeerplaats voor de deur bent u met de auto binnen een uur in
-            Amsterdam, Utrecht, Rotterdam of Den Bosch. Of binnen 20 minuten in
-            de sfeervolle historische plaatsen Wijk bij Duurstede, Buren,
-            Culemborg of Tiel.
+            Sinds de kinderen het huis uit zijn hebben we een deel van ons huis
+            omgevormd in een B&B. Wij vinden het leuk om mensen te ontvangen en
+            een paar fijne dagen te bezorgen. Als het seizoen het toelaat kunt u
+            meegenieten van het fruit uit onze tuin en verse bloemen.
           </p>
         </div>
       </main>

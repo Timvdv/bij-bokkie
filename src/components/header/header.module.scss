@@ -1,32 +1,66 @@
 @import "static/scss/common/variables.scss";
 
+.textLink {
+  display: none;
+
+  @media (min-width: $col-m) {
+    display: block;
+  }
+}
+
 .header {
   padding: 3rem 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: $col-l;
   margin: auto;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: $col-m) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 
   * {
-    width: 33.33333333333%;
+    width: 100%;
+
+    @media (min-width: $col-m) {
+      width: 33.33333333333%;
+    }
   }
 }
 
 .logo {
   display: flex;
   justify-content: center;
+  width: 100%;
+
+  img {
+    max-height: 140px;
+    object-fit: contain;
+  }
 }
 
 .menu {
-  text-align: right;
   display: flex;
   flex-wrap: nowrap;
   list-style: none;
+  margin-top: 4em;
+  text-align: center;
+  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $col-m) {
+    margin-top: 0;
+    text-align: right;
+  }
 
   li {
     margin: 1em;
+    min-width: 70px;
 
     a {
       &:hover {
@@ -34,4 +68,13 @@
       }
     }
   }
+}
+
+li.bookButton {
+  padding: 1em;
+  background: $color-primary;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 100px;
+  color: $white;
 }

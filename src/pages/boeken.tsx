@@ -19,15 +19,21 @@ export default function Boeken() {
       <Header />
 
       <main className={styles.main}>
-        <div className={styles.textCol2}>
+        <div className={`${styles.textCol2}`}>
           <div className={styles.col} style={{ paddingRight: "2em" }}>
+            <br />
+            <br />
             <h2>Boeken</h2>
             <p>
-              In het voorjaar geurt de omgeving van de weelderig bloeiende
-              bloesem, begin zomer kunt u overal in de omgeving heerlijke
-              aardbeien en kersen kopen en later in het jaar pruimen, appels en
-              peren. Op warme dagen kunt u op loopafstand heerlijk luieren aan
-              de rivier.
+              Als u direct wilt boeken kan dat via onze pagina op{" "}
+              <a href="https://www.airbnb.com/h/bij-bokkie">airb&amp;b</a>. Het
+              is iets goedkoper als u direct bij ons boekt.
+            </p>
+            <p>
+              U kunt ons bereiken op onderstaand mailadres:{" "}
+              <a href="mailto:jolanda@vandevathors.nl">
+                jolanda@vandevathors.nl
+              </a>
             </p>
           </div>
 
