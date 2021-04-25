@@ -19,10 +19,10 @@ const Header = () => {
 
       <ul className={styles.menu}>
         <li>
-          <Link href="/bij-bokkie/over-ons.html">Over ons</Link>
+          <Link href="/over-ons.html">Over ons</Link>
         </li>
         <li className={styles.bookButton}>
-          <Link href="/bij-bokkie/boeken.html">Boek nu</Link>
+          <Link href="/boeken.html">Boek nu</Link>
         </li>
       </ul>
     </header>
