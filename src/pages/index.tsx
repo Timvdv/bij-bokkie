@@ -39,7 +39,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className="text">
-          <h1>B&B bij Bokkie vanaf 60 euro per nacht.</h1>
+          <h1>B&amp;B bij Bokkie vanaf 60 euro per nacht.</h1>
 
           <p>
             Bij Bokkie is een B&B vlakbij de rivier de Nederrijn in een klein
@@ -182,14 +182,6 @@ export default function Home() {
             naar de Martinuskerk en/of Korenmolen De Hoop zodra de Coronaregels
             dat weer toelaten.
           </p>
-
-          <p>
-            Wilt u meer weten over het dorp Rijswijk zelf, dan biedt ik u (mits
-            de Coronaregels dat weer toelaten) een bezoekje aan naar Korenmolen
-            de Hoop en/of de Martinuskerk aan. Dat is niet helemaal gratis, de
-            stichtingen die de gebouwen onderhouden kunnen uw donatie goed
-            gebruiken.
-          </p>
         </div>
 
         <div className={styles.gallery}>
@@ -310,7 +302,7 @@ export default function Home() {
             <p>B&amp;B kamer van 17m² inclusief:</p>
 
             <ul>
-              <li>Slaapgedeelte</li>
+              <li>Tweepersoons bed (140x200cm)</li>
               <li>Kitchenette</li>
               <li>Badkamer</li>
               <li>Toilet</li>
@@ -431,16 +423,6 @@ export default function Home() {
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAjQkYh5LbjxdziCwDXdd4xbGR7cqFuzos&q=Cyberhuis,Netherlands"
             ></iframe>
           </div>
-        </div>
-        <div className={styles.text}>
-          <h2>Reserveren</h2>
-          <p>
-            We zitten nog exclusief op Airbnb.{" "}
-            <Link href="https://www.airbnb.com/h/bij-bokkie">Klik hier</Link> om
-            te reserveren is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industries standard dummy text
-            ever since the 1500s, when an unknown printer took a galley
-          </p>
         </div>
       </main>
 

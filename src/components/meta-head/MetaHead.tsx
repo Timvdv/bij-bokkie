@@ -32,10 +32,6 @@ const MetaHead: FC<MetaHeadType> = ({ title }: MetaHeadType) => {
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
-      <meta
-        httpEquiv="Content-Security-Policy"
-        content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;"
-      ></meta>
 
       <link
         href="https://fonts.googleapis.com/css?family=Open+Sans"

@@ -10,10 +10,7 @@ const Header = () => {
 
       <div className={styles.logo}>
         <Link href="/">
-          <img
-            src="http://timvandevathorst.nl/bij-bokkie/logo.png"
-            alt="Bij Bokkie logo"
-          />
+          <img src="/logo.png" alt="Bij Bokkie logo" />
         </Link>
       </div>
 

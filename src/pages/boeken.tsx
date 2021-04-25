@@ -19,25 +19,32 @@ export default function Boeken() {
       <Header />
 
       <main className={styles.main}>
+        <div className={styles.text}>
+          <h2>Boeken</h2>
+          <p>
+            Als u direct wilt boeken kan dat via onze pagina op{" "}
+            <a href="https://www.airbnb.com/h/bij-bokkie">Airbnb</a>. Het is
+            iets goedkoper als u direct bij ons boekt.
+          </p>
+          <p>
+            U kunt ons bereiken op onderstaand mailadres:{" "}
+            <a href="mailto:jolanda@vandevathors.nl">jolanda@vandevathors.nl</a>
+          </p>
+          <br />
+          <hr />
+          <br />
+          <strong>
+            Boeken via <a href="https://www.airbnb.com/h/bij-bokkie">Airbnb</a>.
+          </strong>
+        </div>
+
         <div className={`${styles.textCol2}`}>
           <div className={styles.col} style={{ paddingRight: "2em" }}>
             <br />
             <br />
-            <h2>Boeken</h2>
-            <p>
-              Als u direct wilt boeken kan dat via onze pagina op{" "}
-              <a href="https://www.airbnb.com/h/bij-bokkie">airb&amp;b</a>. Het
-              is iets goedkoper als u direct bij ons boekt.
-            </p>
-            <p>
-              U kunt ons bereiken op onderstaand mailadres:{" "}
-              <a href="mailto:jolanda@vandevathors.nl">
-                jolanda@vandevathors.nl
-              </a>
-            </p>
           </div>
 
-          <div className={styles.col}>
+          {/* <div className={styles.col}>
             <div
               className="airbnb-embed-frame"
               data-id="49037382"
@@ -55,7 +62,7 @@ export default function Boeken() {
                 Rustige studio met uitzicht op de dijk
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </main>
 
