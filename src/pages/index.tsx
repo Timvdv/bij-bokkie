@@ -31,7 +31,7 @@ export default function Home() {
       <div className={styles.bigPicture}>
         <Image
           src="/v1617737361/interior/IMG_1257_psu2ty.jpg"
-          alt="De slaapkamer bij Bokkie"
+          alt="De slaapkamer Bij Bokkie"
           width={2000}
           height={1000}
         />
@@ -39,7 +39,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className="text">
-          <h1>B&amp;B bij Bokkie vanaf 60 euro per nacht.</h1>
+          <h1>B&amp;B Bij Bokkie vanaf 60 euro per nacht.</h1>
 
           <p>
             Bij Bokkie is een B&B vlakbij de rivier de Nederrijn in een klein
@@ -64,7 +64,7 @@ export default function Home() {
             >
               <Image
                 src="/v1617737361/interior/IMG_1257_psu2ty.jpg"
-                alt="De slaapkamer bij Bokkie"
+                alt="De slaapkamer Bij Bokkie"
                 width={300}
                 height={250}
               />
@@ -75,7 +75,7 @@ export default function Home() {
             >
               <Image
                 src="/v1617737361/interior/IMG_1251_gnonmg.jpg"
-                alt="De eettafel en keuken bij Bokkie"
+                alt="De eettafel en keuken Bij Bokkie"
                 width={300}
                 height={250}
               />
@@ -97,7 +97,7 @@ export default function Home() {
             >
               <Image
                 src="/v1617737361/interior/DSC00784_qpvfzy.jpg"
-                alt="De een de keuken bij Bokkie"
+                alt="De een de keuken Bij Bokkie"
                 width={300}
                 height={250}
               />
@@ -108,7 +108,7 @@ export default function Home() {
             >
               <Image
                 src="/v1617737361/interior/IMG_1245_ba1x4t.jpg"
-                alt="Het toilet bij Bokkie"
+                alt="Het toilet Bij Bokkie"
                 width={300}
                 height={250}
               />
@@ -130,7 +130,7 @@ export default function Home() {
             >
               <Image
                 src="/v1617737361/interior/DSC00806_qq2j7l.jpg"
-                alt="De badkamer bij Bokkie"
+                alt="De badkamer Bij Bokkie"
                 width={300}
                 height={250}
               />
@@ -141,7 +141,7 @@ export default function Home() {
             >
               <Image
                 src="/v1617737361/interior/DSC00809_hhjgw2.jpg"
-                alt="De kapstok en gang bij Bokkie"
+                alt="De kapstok en gang Bij Bokkie"
                 width={300}
                 height={250}
               />
@@ -152,7 +152,7 @@ export default function Home() {
             >
               <Image
                 src="/v1617737361/interior/DSC00782_cwsspu.jpg"
-                alt="De eetkamer en keuken bij Bokkie"
+                alt="De eetkamer en keuken Bij Bokkie"
                 width={300}
                 height={250}
               />
@@ -420,12 +420,11 @@ export default function Home() {
               style={{ border: 0, outline: 0 }}
               loading="lazy"
               allowFullScreen
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAjQkYh5LbjxdziCwDXdd4xbGR7cqFuzos&q=Cyberhuis,Netherlands"
+              src={`https://www.google.com/maps/embed/v1/place?key=${process.env.GOOGLE_MAPS_KEY}&q=Cyberhuis,Netherlands`}
             ></iframe>
           </div>
         </div>
       </main>
-
       <Footer />
     </div>
   );
