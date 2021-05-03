@@ -6,7 +6,6 @@ import { SRLWrapper } from "simple-react-lightbox";
 import Image from "next/image";
 import Footer from "components/footer/Footer";
 import Header from "components/header/Header";
-import Link from "next/link";
 
 const options: any = {
   settings: {},
@@ -198,6 +197,17 @@ export default function Home() {
               />
             </a>
 
+            <a
+              href="/v1619192864/outside/4b6ab25e-a508-457f-8df2-d93d57eadbef_mfzfk8.jpg"
+              className={styles.thumbnail}
+            >
+              <Image
+                src="/v1619192864/outside/4b6ab25e-a508-457f-8df2-d93d57eadbef_mfzfk8.jpg"
+                alt="Lekker ontbijt voor twee personen"
+                width={300}
+                height={250}
+              />
+            </a>
             <a
               href="/v1619192864/outside/IMG_0345_mgdpyz.jpg"
               className={styles.thumbnail}
@@ -410,11 +420,17 @@ export default function Home() {
           <div className={styles.col}>
             <h2>Contactgegevens</h2>
             <p> Kerkstaat 1 Rijswijk GLD 4023AP</p>
+            <p>
+              <strong>Email</strong>: jolanda@vandevathorst.nl
+            </p>
+            <p>
+              <strong>Telefoon</strong>: 06-12121679
+            </p>
           </div>
 
           <div className={styles.col}>
             <iframe
-              title="Bokkie location in google maps"
+              title="Bokkie locatie via google maps"
               width="100%"
               height="225"
               style={{ border: 0, outline: 0 }}

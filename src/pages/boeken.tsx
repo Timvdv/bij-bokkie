@@ -28,7 +28,9 @@ export default function Boeken() {
           </p>
           <p>
             U kunt ons bereiken op onderstaand mailadres:{" "}
-            <a href="mailto:jolanda@vandevathors.nl">jolanda@vandevathors.nl</a>
+            <a href="mailto:jolanda@vandevathorst.nl">
+              jolanda@vandevathorst.nl
+            </a>
           </p>
           <br />
           <hr />
