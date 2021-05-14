@@ -122,6 +122,20 @@
   justify-content: space-between;
   flex-direction: column;
 
+  div {
+    margin: 1em;
+  }
+
+  &[data-align="center"] {
+    align-items: center;
+
+    &:nth-child(even) {
+      @media (max-width: $col-s) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
   .col {
     width: 100%;
 
@@ -133,6 +147,10 @@
   @media (min-width: $col-s) {
     flex-direction: row;
   }
+
+  &.colMobileReverse {
+    flex-direction: row-reverse;
+  }
 }
 
 .textColCentered {
@@ -141,4 +159,8 @@
 
 .colHeader {
   margin-top: 3.5em;
+}
+
+.roundedImage {
+  border-radius: 5px;
 }
