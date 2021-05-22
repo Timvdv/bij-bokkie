@@ -18,7 +18,11 @@ const options: any = {
 
   thumbnails: {},
 };
+
 export default function Home() {
+  const bnbPrice1Person = 74;
+  const bnbPrice2Person = 89;
+
   return (
     <div>
       <Head>
@@ -38,7 +42,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className="text">
-          <h1>B&amp;B Bij Bokkie vanaf 60 euro per nacht.</h1>
+          <h1>B&amp;B Bij Bokkie vanaf {bnbPrice1Person} euro per nacht.</h1>
 
           <p>
             Bij Bokkie is een B&B vlakbij de rivier de Nederrijn in een klein
@@ -281,7 +285,7 @@ export default function Home() {
         <div className={styles.textCol2}>
           <div className={styles.col}>
             <h2>Prijs - één persoon</h2>
-            <p>€ 60 euro voor een persoon per nacht</p>
+            <p>€ {bnbPrice1Person} euro voor een persoon per nacht</p>
 
             <ul>
               <li>Schoonmaakkosten</li>
@@ -293,7 +297,7 @@ export default function Home() {
 
           <div className={styles.col}>
             <h2>Prijs - twee personen</h2>
-            <p>€ 75 euro voor twee personen per nacht </p>
+            <p>€ {bnbPrice2Person} euro voor twee personen per nacht </p>
 
             <ul>
               <li>Schoonmaakkosten</li>

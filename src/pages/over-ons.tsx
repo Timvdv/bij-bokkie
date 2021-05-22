@@ -57,8 +57,9 @@ export default function OverOns() {
               zijn auto van de dijk reed en tegen een boom botste. Twee grote
               bulten op zijn hoofd zorgden voor zijn bijnaam Bokkie Baauw.
               Vandaar dat we onze B&amp;B ‘Bij Bokkie’ hebben genoemd. Het stond
-              bekend als een gezellig dorpscafé waar soms zijn geit mee naar
-              binnen mocht en dan kreeg zij ook een borreltje.
+              bekend als een gezellig dorpscafé waar soms de geit mee naar
+              binnen mocht (zie foto) en dan kreeg zij ook wel eens een
+              borreltje.
             </p>
           </div>
         </div>
