@@ -160,6 +160,17 @@ export default function Home() {
                 height={250}
               />
             </a>
+            <a
+              href="v1661023361/outside/bij-bokkie-buiten-mat_k2gg6y.jpg"
+              className={styles.thumbnail}
+            >
+              <Image
+                src="v1661023361/outside/bij-bokkie-buiten-mat_k2gg6y.jpg"
+                alt="Bij Bokkie buiten met mat"
+                width={300}
+                height={250}
+              />
+            </a>
           </SRLWrapper>
         </div>
         <div className={styles.text}>
@@ -354,6 +365,7 @@ export default function Home() {
             <ul>
               <li>Handdoeken</li>
               <li>Zeep, shampoo, bodylotion</li>
+              <li>Föhn</li>
             </ul>
 
             <strong>Gedeeld</strong>
@@ -362,7 +374,6 @@ export default function Home() {
               <li>Parkeerplaats op eigen terrein</li>
               <li>Gebruik van palletbank zithoek</li>
               <li>Tafeltennistafel</li>
-              <li>Mini klimmuur in overleg</li>
             </ul>
           </div>
         </div>
@@ -440,7 +451,7 @@ export default function Home() {
               style={{ border: 0, outline: 0 }}
               loading="lazy"
               allowFullScreen
-              src={`https://www.google.com/maps/embed/v1/place?key=${process.env.GOOGLE_MAPS_KEY}&q=Cyberhuis,Netherlands`}
+              src={`https://www.google.com/maps/embed/v1/place?key=${process.env.GOOGLE_MAPS_KEY}&q=Kerkstraat,1,Rijswijk,Gelderland,Netherlands`}
             ></iframe>
           </div>
         </div>
