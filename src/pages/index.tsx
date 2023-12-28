@@ -452,10 +452,11 @@ export default function Home() {
           <h2>Theetuin Bakkie bij Bokkie</h2>
 
           <p>
-            Sinds 2023 heb ik een theetuin geopend, open van half april tot half
-            oktober, als een prachtige aanvulling op mijn B&B. Deze nieuwe
-            onderneming biedt gasten een fijne plek om te ontspannen zonder
-            invloed op de ruimte van de B&B.
+            Sinds 2023 heb ik een theetuin geopend. Bakkie bij Bokkie is open
+            van half april tot half oktober. Het is een mooie aanvulling op mijn
+            B&B. Deze nieuwe onderneming biedt gasten een fijne plek om te
+            ontspannen zonder dat het invloed op de rust en de ruimte van de
+            B&B.
             <br />
             <br />
             <strong>Openingstijden:</strong> <br />
