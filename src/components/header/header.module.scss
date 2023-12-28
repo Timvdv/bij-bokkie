@@ -2,6 +2,7 @@
 
 .textLink {
   display: none;
+  font-size: 20px;
 
   @media (min-width: $col-m) {
     display: block;
@@ -9,7 +10,7 @@
 }
 
 .header {
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 2rem 2rem;
   display: flex;
   align-items: center;
   width: 100%;
@@ -38,8 +39,9 @@
   width: 100%;
 
   img {
-    max-height: 140px;
+    max-height: 200px;
     object-fit: contain;
+    width: 200px;
   }
 }
 
@@ -47,11 +49,12 @@
   display: flex;
   flex-wrap: nowrap;
   list-style: none;
-  margin-top: 4em;
+
   text-align: center;
   padding-left: 0;
   justify-content: center;
   align-items: center;
+  margin: 0;
 
   @media (min-width: $col-m) {
     margin-top: 0;
@@ -70,11 +73,17 @@
   }
 }
 
-li.bookButton {
+.bookButton {
   padding: 1em;
   background: $color-primary;
   border-radius: 4px;
   text-align: center;
   min-width: 100px;
   color: $white;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .8;
+  }
 }

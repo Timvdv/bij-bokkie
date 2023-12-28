@@ -72,6 +72,19 @@ export default function Home() {
                 height={250}
               />
             </a>
+
+            <a
+              href="/v1703803084/outside/sxanilyumacseabzltsd.jpg"
+              className={styles.thumbnail}
+            >
+              <Image
+                src="/v1703803084/outside/sxanilyumacseabzltsd.jpg"
+                alt="De eettafel en keuken Bij Bokkie"
+                width={300}
+                height={250}
+              />
+            </a>
+
             <a
               href="/v1617737361/interior/IMG_1251_gnonmg.jpg"
               className={styles.thumbnail}
@@ -83,6 +96,7 @@ export default function Home() {
                 height={250}
               />
             </a>
+
             <a
               href="/v1617737361/interior/IMG_1228_fp9m3m.jpg"
               className={styles.thumbnail}
@@ -212,7 +226,7 @@ export default function Home() {
               />
             </a>
 
-            <a
+            {/* <a
               href="/v1619192864/outside/4b6ab25e-a508-457f-8df2-d93d57eadbef_mfzfk8.jpg"
               className={styles.thumbnail}
             >
@@ -222,7 +236,8 @@ export default function Home() {
                 width={300}
                 height={250}
               />
-            </a>
+            </a> */}
+
             <a
               href="/v1619192864/outside/IMG_0345_mgdpyz.jpg"
               className={styles.thumbnail}
@@ -234,6 +249,43 @@ export default function Home() {
                 height={250}
               />
             </a>
+
+            <a
+              href="/v1703802684/outside/kbcxa0t1lasfjeqxri64.jpg"
+              className={styles.thumbnail}
+            >
+              <Image
+                src="/v1703802684/outside/kbcxa0t1lasfjeqxri64.jpg"
+                alt="Hoogwater bij molen"
+                width={300}
+                height={250}
+              />
+            </a>
+
+            <a
+              href="/v1703802872/outside/lxmswqgeyxfiugz8aoby.jpg"
+              className={styles.thumbnail}
+            >
+              <Image
+                src="/v1703802872/outside/lxmswqgeyxfiugz8aoby.jpg"
+                alt="Molen bij wiek"
+                width={300}
+                height={250}
+              />
+            </a>
+
+            <a
+              href="/v1703802864/outside/sa4pzdaam6yckvckirao.jpg"
+              className={styles.thumbnail}
+            >
+              <Image
+                src="/v1703802864/outside/sa4pzdaam6yckvckirao.jpg"
+                alt="Bloemen op de dijk"
+                width={300}
+                height={250}
+              />
+            </a>
+
             <a
               href="/v1619192864/outside/IMG_0437_y9mmvm.jpg"
               className={styles.thumbnail}
@@ -355,7 +407,7 @@ export default function Home() {
               <li>Mini koelkast</li>
               <li>Inductiekookplaat</li>
               <li>Kookpan en koekenpan</li>
-              <li>Borden, Bestek, glazen, theeglazen en koffiekoppen</li>
+              <li>Borden, Bestek, glazen, thee- en koffiekoppen</li>
               <li>Keukendoeken en afwasmiddel</li>
               <li>Waterkoker</li>
               <li>Nespresso koffiezetapparaat</li>
@@ -397,6 +449,21 @@ export default function Home() {
         </div>
 
         <div className={styles.text}>
+          <h2>Theetuin Bakkie bij Bokkie</h2>
+
+          <p>
+            Sinds 2023 heb ik een theetuin geopend, open van half april tot half
+            oktober, als een prachtige aanvulling op mijn B&B. Deze nieuwe
+            onderneming biedt gasten een fijne plek om te ontspannen zonder
+            invloed op de ruimte van de B&B.
+            <br />
+            <br />
+            <strong>Openingstijden:</strong> <br />
+            woensdag t/m zaterdag van 11:00 tot 17:00.
+          </p>
+        </div>
+
+        <div className={styles.text}>
           <h2>Per auto</h2>
           <p>
             Per auto A2 Afrit Culemborg {">"} richting Kesteren Afslag Rijswijk{" "}
@@ -409,18 +476,8 @@ export default function Home() {
         <div className={styles.text}>
           <h2>Per trein</h2>
           <p>
-            Station Culemborg (pick-up 12,50 euro) Per bus: Vanaf station
-            Culemborg lijn: Arriva Bus 46 {">"} richting Tiel Bushalte Kerk,
-            Zoelmond Arriva Buurtbus {">"} richting Maurik Bushalte
-            Hoekenburgplein, Rijswijk Gelderland 5 minuten lopen naar Bij Bokkie
-            op Kerkstraat 1
-          </p>
-
-          <p>
-            Vanaf station Tiel: Arriva Bus 44 {">"} richting Wageningen Bushalte
-            Rabobank, Maurik Arriva Buurtbus 263 {">"} richting Beusichem
-            Bushalte Hoekenburgplein, Rijswijk Gelderland 5 minuten lopen naar
-            Bij Bokkie op Kerkstraat 1
+            Station Culemborg (pick-up 12,50 euro).
+            {`Er zijn ook OV-fietsen beschikbaar, maar het is wel ongeveer 12 kilometer fietsen.`}
           </p>
 
           <p>
@@ -436,7 +493,7 @@ export default function Home() {
             <h2>Contactgegevens</h2>
             <p> Kerkstaat 1 Rijswijk GLD 4023AP</p>
             <p>
-              <strong>Email</strong>: jolanda@vandevathorst.nl
+              <strong>Email</strong>: jolanda@bijbokkie.nl
             </p>
             <p>
               <strong>Telefoon</strong>: 06-12121679

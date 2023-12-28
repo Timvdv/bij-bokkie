@@ -18,8 +18,8 @@ const Header = () => {
         <li>
           <Link href="/over-ons.html">Over ons</Link>
         </li>
-        <li className={styles.bookButton}>
-          <Link href="/boeken.html">Boek nu</Link>
+        <li>
+          <Link href="/boeken.html"><span className={styles.bookButton}>Boek nu</span></Link>
         </li>
       </ul>
     </header>
