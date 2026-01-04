@@ -1,4 +1,4 @@
-@import "static/scss/common/variables.scss";
+@use "static/scss/common/variables.scss" as *;
 
 .textLink {
   display: none;

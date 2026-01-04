@@ -20,8 +20,8 @@ const options: any = {
 };
 
 export default function Home() {
-  const bnbPrice1Person = 74;
-  const bnbPrice2Person = 89;
+  const bnbPrice1Person = 79;
+  const bnbPrice2Person = 96.5;
 
   return (
     <div>
@@ -360,7 +360,7 @@ export default function Home() {
 
           <div className={styles.col}>
             <h2>Prijs - twee personen</h2>
-            <p>€ {bnbPrice2Person} euro voor twee personen per nacht </p>
+            <p>€ {bnbPrice2Person.toFixed(2).replace('.', ',')} euro voor twee personen per nacht </p>
 
             <ul>
               <li>Schoonmaakkosten</li>
@@ -460,7 +460,7 @@ export default function Home() {
             <br />
             <br />
             <strong>Openingstijden:</strong> <br />
-            woensdag t/m zaterdag van 11:00 tot 17:00.
+            Woensdag t/m zaterdag van 11:00 tot 17:00, bij mooi weer.
           </p>
         </div>
 
@@ -509,7 +509,7 @@ export default function Home() {
               style={{ border: 0, outline: 0 }}
               loading="lazy"
               allowFullScreen
-              src={`https://www.google.com/maps/embed/v1/place?key=${process.env.GOOGLE_MAPS_KEY}&q=Kerkstraat,1,Rijswijk,Gelderland,Netherlands`}
+              src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY}&q=Kerkstraat,1,Rijswijk,Gelderland,Netherlands`}
             ></iframe>
           </div>
         </div>

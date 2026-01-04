@@ -1,4 +1,5 @@
-@import "./css-variables.scss";
+@use "./css-variables.scss";
+@use "./variables.scss" as *;
 
 html,
 body {
