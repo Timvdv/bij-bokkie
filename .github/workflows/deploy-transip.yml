@@ -35,5 +35,5 @@ jobs:
           username: ${{ secrets.TRANSIP_FTP_USER }}
           password: ${{ secrets.TRANSIP_FTP_PASSWORD }}
           source: "out/**"
-          target: /www
+          target: /data/sites/web/bijbokkienl/www
           rm: true
