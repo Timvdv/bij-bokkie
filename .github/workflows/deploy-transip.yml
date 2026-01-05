@@ -1,0 +1,40 @@
+name: Deploy to TransIP
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: deploy-transip
+  cancel-in-progress: true
+
+jobs:
+  export-and-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build and export static site
+        run: npm run export
+
+      - name: Add SSH key
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.TRANSIP_FTP_PASSWORD }}
+
+      - name: Add host key
+        run: ssh-keyscan -H ${{ secrets.TRANSIP_FTP_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Upload to TransIP via SFTP (rsync)
+        run: rsync -az --delete ./out/ ${{ secrets.TRANSIP_FTP_USER }}@${{ secrets.TRANSIP_FTP_HOST }}:/www/
