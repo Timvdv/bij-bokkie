@@ -31,10 +31,7 @@ jobs:
       - name: Install sshpass
         run: sudo apt-get update && sudo apt-get install -y sshpass
 
-      - name: Add host key
-        run: ssh-keyscan -H ${{ secrets.TRANSIP_FTP_HOST }} >> ~/.ssh/known_hosts
-
       - name: Upload to TransIP via SFTP (rsync)
         env:
           SSHPASS: ${{ secrets.TRANSIP_FTP_PASSWORD }}
-        run: sshpass -e rsync -az --delete -e "ssh" ./out/ ${{ secrets.TRANSIP_FTP_USER }}@${{ secrets.TRANSIP_FTP_HOST }}:/www/
+        run: sshpass -e rsync -az --delete -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ./out/ ${{ secrets.TRANSIP_FTP_USER }}@${{ secrets.TRANSIP_FTP_HOST }}:/www/
