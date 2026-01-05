@@ -28,10 +28,11 @@ jobs:
       - name: Build and export static site
         run: npm run export
 
-      - name: Install sshpass
-        run: sudo apt-get update && sudo apt-get install -y sshpass
-
-      - name: Upload to TransIP via SFTP (rsync)
-        env:
-          SSHPASS: ${{ secrets.TRANSIP_FTP_PASSWORD }}
-        run: sshpass -e rsync -az --delete -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ./out/ ${{ secrets.TRANSIP_FTP_USER }}@${{ secrets.TRANSIP_FTP_HOST }}:/www/
+      - name: Upload to TransIP
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.TRANSIP_FTP_HOST }}
+          username: ${{ secrets.TRANSIP_FTP_USER }}
+          password: ${{ secrets.TRANSIP_FTP_PASSWORD }}
+          source: "out/**"
+          target: /www
