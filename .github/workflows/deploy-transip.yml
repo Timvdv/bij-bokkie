@@ -36,3 +36,4 @@ jobs:
           password: ${{ secrets.TRANSIP_FTP_PASSWORD }}
           source: "out/**"
           target: /www
+          rm: true
