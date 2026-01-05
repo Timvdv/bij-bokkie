@@ -459,7 +459,7 @@ export default function Home() {
             B&B.
             <br />
             <br />
-            <strong>!!!Openingstijden:</strong> <br />
+            <strong>Openingstijden:</strong> <br />
             Woensdag t/m zaterdag van 11:00 tot 17:00, bij mooi weer.
           </p>
         </div>
