@@ -1,4 +1,5 @@
 import Head from "next/head";
+import type { WheelEvent } from "react";
 import styles from "static/scss/pages/Home.module.scss";
 
 import MetaHead from "components/meta-head/MetaHead";
@@ -22,6 +23,33 @@ const options: any = {
 export default function Home() {
   const bnbPrice1Person = 79;
   const bnbPrice2Person = 96.5;
+  const handleGalleryWheel = (event: WheelEvent<HTMLDivElement>) => {
+    const container = event.currentTarget;
+    const maxScrollLeft = container.scrollWidth - container.clientWidth;
+
+    if (maxScrollLeft <= 0) {
+      return;
+    }
+
+    const delta =
+      Math.abs(event.deltaX) > Math.abs(event.deltaY)
+        ? event.deltaX
+        : event.deltaY;
+    const atStart = container.scrollLeft <= 0;
+    const atEnd = container.scrollLeft >= maxScrollLeft;
+
+    if ((delta < 0 && atStart) || (delta > 0 && atEnd)) {
+      return;
+    }
+
+    const nextScrollLeft = Math.min(
+      maxScrollLeft,
+      Math.max(0, container.scrollLeft + delta)
+    );
+
+    container.scrollLeft = nextScrollLeft;
+    event.preventDefault();
+  };
 
   return (
     <div>
@@ -59,7 +87,7 @@ export default function Home() {
             eigen toegang, privé badkamer en toilet.
           </p>
         </div>
-        <div className={styles.gallery}>
+        <div className={styles.gallery} onWheel={handleGalleryWheel}>
           <SRLWrapper options={options}>
             <a
               href="/v1617737361/interior/IMG_1257_psu2ty.jpg"
@@ -185,6 +213,17 @@ export default function Home() {
                 height={250}
               />
             </a>
+            <a
+              href="/v1767909280/be3e8fae-2079-4cb7-9b82-30ea048b0de6_kijspb.jpg"
+              className={styles.thumbnail}
+            >
+              <Image
+                src="/v1767909280/be3e8fae-2079-4cb7-9b82-30ea048b0de6_kijspb.jpg"
+                alt="Bakkie bij Bokkie"
+                width={300}
+                height={250}
+              />
+            </a>
           </SRLWrapper>
         </div>
         <div className={styles.text}>
@@ -212,7 +251,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className={styles.gallery}>
+        <div className={styles.gallery} onWheel={handleGalleryWheel}>
           <SRLWrapper options={options}>
             <a
               href="/v1619192864/outside/IMG_1445_pcnfki.jpg"
@@ -342,9 +381,30 @@ export default function Home() {
                 height={250}
               />
             </a>
+            <a
+              href="/v1767908634/outside/42C84C1A-8C43-415C-8659-070FA37C3309IMG_9547_exl4sa.heic"
+              className={styles.thumbnail}
+            >
+              <Image
+                src="/v1767908634/outside/42C84C1A-8C43-415C-8659-070FA37C3309IMG_9547_exl4sa.heic"
+                alt="Tuin in de sneeuw"
+                width={300}
+                height={250}
+              />
+            </a>
+            <a
+              href="/v1767908630/outside/806FD585-9127-4D0F-83FD-4347BAEDF07E_ga1jql.heic"
+              className={styles.thumbnail}
+            >
+              <Image
+                src="/v1767908630/outside/806FD585-9127-4D0F-83FD-4347BAEDF07E_ga1jql.heic"
+                alt="Wijk bij duurstede met sneeuw"
+                width={300}
+                height={250}
+              />
+            </a>
           </SRLWrapper>
         </div>
-
         <div className={styles.textCol2}>
           <div className={styles.col}>
             <h2>Prijs - één persoon</h2>
