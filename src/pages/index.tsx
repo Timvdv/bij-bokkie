@@ -224,6 +224,17 @@ export default function Home() {
                 height={250}
               />
             </a>
+            <a
+              href="/v1767908634/outside/42C84C1A-8C43-415C-8659-070FA37C3309IMG_9547_exl4sa.heic"
+              className={styles.thumbnail}
+            >
+              <Image
+                src="/v1767908634/outside/42C84C1A-8C43-415C-8659-070FA37C3309IMG_9547_exl4sa.heic"
+                alt="Tuin in de sneeuw"
+                width={300}
+                height={250}
+              />
+            </a>
           </SRLWrapper>
         </div>
         <div className={styles.text}>
@@ -377,17 +388,6 @@ export default function Home() {
               <Image
                 src="/v1619192864/outside/IMG_1968_dktwpu.jpg"
                 alt="De lek met zonsondergang"
-                width={300}
-                height={250}
-              />
-            </a>
-            <a
-              href="/v1767908634/outside/42C84C1A-8C43-415C-8659-070FA37C3309IMG_9547_exl4sa.heic"
-              className={styles.thumbnail}
-            >
-              <Image
-                src="/v1767908634/outside/42C84C1A-8C43-415C-8659-070FA37C3309IMG_9547_exl4sa.heic"
-                alt="Tuin in de sneeuw"
                 width={300}
                 height={250}
               />
