@@ -26,6 +26,8 @@ jobs:
         run: npm ci
 
       - name: Build and export static site
+        env:
+          NEXT_PUBLIC_GOOGLE_MAPS_KEY: ${{ secrets.NEXT_PUBLIC_GOOGLE_MAPS_KEY }}
         run: npm run export
 
       - name: Upload to TransIP
