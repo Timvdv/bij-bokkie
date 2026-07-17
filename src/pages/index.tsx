@@ -21,8 +21,8 @@ const options: any = {
 };
 
 export default function Home() {
-  const bnbPrice1Person = 79;
-  const bnbPrice2Person = 96.5;
+  const bnbPrice1Person = 86;
+  const bnbPrice2Person = 104.81;
   const handleGalleryWheel = (event: WheelEvent<HTMLDivElement>) => {
     const container = event.currentTarget;
     const maxScrollLeft = container.scrollWidth - container.clientWidth;
